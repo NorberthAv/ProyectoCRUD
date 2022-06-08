@@ -18,8 +18,9 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    @if(auth()->check())
+  
     <ul class="navbar-nav">
+     @if(auth()->check())
       <li class="nav-item active">
     <a class="nav-link" href="{{route('home.index')}}">Home</a>
   </li>
@@ -39,7 +40,6 @@
     <a class="nav-link" href="{{route('login.destroy')}}">Log out</a>
   </li>
    @else
-
   <li class="nav-item">
     <a class="nav-link" href="{{route('login.index')}}">Log in</a>
   </li>
