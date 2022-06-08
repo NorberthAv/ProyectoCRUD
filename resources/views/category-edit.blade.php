@@ -8,7 +8,7 @@
 <div class="fondo-edit container-fluid">
 
 
-    <h1 class="titulo">Categoria<h1>
+    <h1 class="titulo">Categorias<h1>
 <br>
         <div class="container">
             <div class="row">
