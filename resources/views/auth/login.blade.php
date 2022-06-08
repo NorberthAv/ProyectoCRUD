@@ -7,11 +7,10 @@
 
 <div class="fondo container-fluid">
 <br>
-<br>
-	<h1 class="titulo">Login<h1>
+	<h1 class="titulo ocul">Login<h1>
 	<br>
 <br>
-<div container>
+<div class="container-fluid">
 		<div class="main row">
 
 				<div class="col-md-4 col-xs-4 col-lg-4"></div>
@@ -36,7 +35,9 @@
 		</div>	
 </div>
 <br>
-
+<br>
+<br>
 </div>
+
 
 @endsection

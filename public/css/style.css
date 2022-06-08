@@ -16,10 +16,11 @@
 	text-align: center;
 }
 .titulo{
-	color: blue;
+	color: #191970;
 	font-size: 50px;
 }
 .menu{
+
 	padding: 1%;
 	position: relative;
 	align-content: center;
@@ -27,11 +28,14 @@
 	font-size: 25px;
 	right: 0px;
 }
+.letras{
+	color: #191970;
+}
 
 .ingreso{
 	background-color: #ffffff;
 	position: relative;
-	margin: 8px;
+	margin: 12px;
 	border: black 2 px;
 	border-radius: 14px;
 }
@@ -147,6 +151,7 @@ padding: 4%;
 
 .espacio-form{
 	padding: 2%;
+	box-shadow:black 5px 5px 30px ;
 	border-radius: 14px;
 	background-color: #ffffff;
 	border: limegreen 2px solid;
@@ -170,21 +175,37 @@ padding: 4%;
 	background-color: #ffffff;
 	height: 600px;
 	margin-bottom:4px;
+	box-shadow:black 5px 5px 30px ;
 	border: solid black 5px;
+	align-content: center;
+	text-decoration: none;
 	border-radius: 20px;
 	padding: 10%;
 }
 .footer{
-	position: flex;
-	bottom: -10px;
-	height: 200px;
+	position: flexd;
+	padding: 2%;
+
+	margin-top:-10px;
+	bottom: -2px;
 	width: 100%;
-	background-color: black;
+	background-image: url(../img/city-silueta.png);
+	background-size: contain;
+	filter: 0.5;
 	color: #ffffff;
 
 
 }
-.img-f{
+.imagen-cont{
+	position: relative;
+	top: 15%;
+	left: 20%;
+	margin: 3%;
+	width: 50%;
+	height: 50%;
 	
-
+}
+.img-m{
+	width: 100%;
+	height: 100%;
 }

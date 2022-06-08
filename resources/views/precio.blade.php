@@ -8,7 +8,7 @@
 <div class="fondo container-fluid">
 
 
-    <h1 class="titulo">Precios<h1>
+    <h1 class="titulo ocul">Precios<h1>
 <br>
         <div class="container">
             <div class="row">
