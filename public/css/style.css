@@ -63,10 +63,22 @@
 	padding-bottom: 2%;
 	padding-right: 5%;
 	padding-left: 5%;
-	width: 50%;
+	width: 70%;
 	margin: 2%;
 	color: #fff;
-	background-color: blue;
+	background-color: darkblue;
+
+}
+.button-form:hover {
+	padding-top: 2%;
+	border-radius: 10px;
+	padding-bottom: 2%;
+	padding-right: 5%;
+	padding-left: 5%;
+	width: 70%;
+	margin: 2%;
+	color: #fff;
+	background-color: royalblue;
 
 }
 .btn-form{
