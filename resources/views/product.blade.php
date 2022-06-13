@@ -152,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 
       @endforeach   
 
@@ -161,23 +161,7 @@
 </div>
 <br>
 <br>
-<script type="text/javascript">
-        
-        function cambiar(){
 
-        if($(".linea-3").hasClass('pag')){
-            $(".linea-3").removeClass('pag').addClass('ocul');
-
-        }else if($(".linea-3").hasClass('ocul')){
-            $(".linea-3").removeClass('ocul').addClass('pag');
-        }
-          
-        
-
-    };
-           
-
-    </script>
 
 </div>
 
