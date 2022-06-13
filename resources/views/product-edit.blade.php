@@ -23,24 +23,31 @@
                          <input type="number" name="id" value="{{$product->id}}" disable class="ocul">
 <br>
                           <label><b>Nombre:</b></label>                         
-                        <input type="text" name="nombre" placeholder="{{$product->nombre}}" class="campo-form">
+                        <input type="text" name="nombre" value="{{$product->nombre}}" class="campo-form">
                         <br>
                           <label><b>Descripción:</b></label>                         
-                        <input type="text" name="descripcion" placeholder="{{$product->descripcion}}" class="campo-form">
+                        <input type="text" name="descripcion" value="{{$product->descripcion}}" class="campo-form">
                         <br>
                         <label><b>Su producto esta exento de iva:</b></label>   
                             <br> 
                             <div class="row">
+                                @if( $product->exento == 'si') 
 <br> 
-                                <div class="col-md-6 col-xs-6 col-lg-6" ><p>SI</p><input type="radio" name="exento" class="campo-form-ch" value="si"></div>
+                                <div class="col-md-6 col-xs-6 col-lg-6" ><p>SI</p><input type="radio" name="exento" class="campo-form-ch" value="si" checked></div>
                                 <div class="col-md-6 col-xs-6 col-lg-6" ><p>NO</p><input type="radio" name="exento" class="campo-form-ch" value="no"></div>
+                                @endif
+                                 @if( $product->exento == 'no') 
+<br> 
+                                <div class="col-md-6 col-xs-6 col-lg-6" ><p>SI</p><input type="radio" name="exento" class="campo-form-ch" value="si" ></div>
+                                <div class="col-md-6 col-xs-6 col-lg-6" ><p>NO</p><input type="radio" name="exento" class="campo-form-ch" value="no" checked></div>
+                                @endif
                             </div>                     
                         
                         
                         <br>
                           <label><b>Categorias:</b></label> 
                                 <select class="campo-form" name="categorias" placeholder="Categorias">
-                                    <option selected disabled>Categorias</option>
+                                    <option selected value="{{$product->categories_id}}">{{$product->categorias->nombre}}</option>
                                     @foreach ($category as $row)  
                                     @if( $row->estatus == 'Activo') 
                                     <option value="{{$row->id}}">{{$row->nombre}}</option>

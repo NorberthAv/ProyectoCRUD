@@ -24,7 +24,7 @@
                          <input type="number" name="id" value="{{$category->id}}" disable class="ocul">
 
                         <label><b>Nombre:</b></label>                         
-                        <input type="text" name="nombre" class="campo-form" placeholder="{{$category->nombre}}">
+                        <input type="text" name="nombre" class="campo-form" value="{{$category->nombre}}">
                                 <div class="row">
                                  <div class="col-md-6 col-lg-6 col-xs-12"> <button class="btn-form" type="submit"><b>Modificar</b></button></div>
                                  <div class="col-md-6 col-lg-6 col-xs-12"> <a href="{{route('category.index')}}"><button class="btn-form-neg" type="button"><b>Cancelar</b></button></a></div>

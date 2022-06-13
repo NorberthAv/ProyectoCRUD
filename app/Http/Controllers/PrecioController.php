@@ -23,6 +23,7 @@ class PrecioController extends Controller
 
     
      $product = Product::all();
+     $precio = Precio::with('productos_relacion')->get();
      $precio  = Precio::find($id);     
      
    

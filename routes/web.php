@@ -6,7 +6,7 @@ use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PrecioController;
-use App\Http\Controllers\inventarioController;
+use App\Http\Controllers\InventarioController;
 
 
 /*

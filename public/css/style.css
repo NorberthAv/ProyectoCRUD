@@ -183,6 +183,11 @@ padding: 4%;
 	visibility: hidden;
 	position: absolute;
 }
+
+.pag1{
+  background-color: #ff8533 ;
+}
+
 .panel-p{
 	background-color: #ffffff;
 	height: 600px;

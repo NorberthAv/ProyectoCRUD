@@ -24,11 +24,11 @@
                         <input type="date" name="fecha" placeholder="Fecha" value="{{$precio->fecha}}" class="campo-form">
                         <br>
                                                  
-                       <input type="numeric" name="monto" placeholder="{{$precio->monto}}" class="campo-form">
+                       <input type="numeric" name="monto" value="{{$precio->monto}}" class="campo-form">
                         <br>
                         <label><b>Productos:</b></label> 
                                 <select class="campo-form" name="productos" placeholder="Productos">
-                                    <option selected disabled>Productos</option>
+                                    <option selected value="{{$precio->productos_id}}">{{$precio->productos_relacion->nombre}}</option>
                                     @foreach ($product as $row)  
                                     @if( $row->estatus == 'Activo') 
                                     <option value="{{$row->id}}">{{$row->nombre}}</option>

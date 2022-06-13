@@ -27,6 +27,7 @@ class ProductController extends Controller
     public function edit($id){
 
      $category = Category::all();
+     $product = Product::with('categorias')->get();
      $product = Product::find($id);     
      
 
