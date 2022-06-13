@@ -28,7 +28,7 @@
                         <br>
                         <label><b>Productos:</b></label> 
                                 <select class="campo-form" name="productos" placeholder="Productos">
-                                    <option selected value="{{$precio->productos_id}}">{{$precio->productos_relacion->nombre}}</option>
+                                    <option selected value="{{$precio->product_id}}">{{$precio->productos_relacion->nombre}}</option>
                                     @foreach ($product as $row)  
                                     @if( $row->estatus == 'Activo') 
                                     <option value="{{$row->id}}">{{$row->nombre}}</option>
